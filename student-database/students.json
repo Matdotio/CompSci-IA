@@ -1,0 +1,78 @@
+[
+  {
+    "username": "student1",
+    "password": "pass1",
+    "sirName": "koop",
+    "firstName": "noah",
+    "year": "13",
+    "form": "s",
+    "image": "",
+    "studentPermissionStatus": false,
+    "reason": "1",
+    "changedBy": "username"
+  },
+  {
+    "username": "student2",
+    "password": "pass2",
+    "sirName": "vogt",
+    "firstName": "Matteo",
+    "year": "13",
+    "form": "b",
+    "image": "",
+    "studentPermissionStatus": false,
+    "reason": "4",
+    "changedBy": "Your Name"
+  },
+  {
+    "username": "student3",
+    "password": "pass3",
+    "sirName": "muster",
+    "firstName": "max",
+    "year": "13",
+    "form": "Bronte",
+    "image": "",
+    "studentPermissionStatus": true,
+    "reason": "3",
+    "changedBy": "Your Name"
+  },
+  {
+    "sirName": "nite",
+    "firstName": "came",
+    "year": "12",
+    "form": "s",
+    "image": "",
+    "studentPermissionStatus": true,
+    "reason": "0",
+    "changedBy": "Your Name"
+  },
+  {
+    "sirName": "nitea",
+    "firstName": "fill",
+    "year": "12",
+    "form": "s",
+    "image": "",
+    "studentPermissionStatus": false,
+    "reason": "0",
+    "changedBy": "Your Name"
+  },
+  {
+    "sirName": "fisher",
+    "firstName": "fabi",
+    "year": "13",
+    "form": "Bronte",
+    "image": "",
+    "studentPermissionStatus": true,
+    "reason": null
+  },
+  {
+    "sirName": "musterman",
+    "firstName": "maximilian",
+    "year": "12",
+    "form": "A",
+    "image": "",
+    "studentPermissionStatus": false,
+    "reason": null,
+    "username": "maximilian.musterman728",
+    "password": "s9wcjyo7"
+  }
+]

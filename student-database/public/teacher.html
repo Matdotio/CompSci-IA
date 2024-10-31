@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Database</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <div id="header">
+        <button id="addStudentBtn" class="circular-button">+</button>
+        
+        <div class="sort-container">
+
+            <input type="text" id="searchInput" placeholder="Search by first or last name" />
+
+            <select id="sortSelect">
+                <option value="sirName">Sir-Name</option>
+                <option value="firstName">First-Name</option>
+                <option value="year">Year</option>
+                <option value="form">Form</option>
+                <option value="studentPermissionStatus">Status</option>
+            </select>
+            <button id="sortBtn">Sort</button>
+        </div>
+    
+        <div id="statusIndicator">Connected to Database</div>
+    </div>
+
+    <hr style="border: none; height: 2px; background-color: #707070;">
+
+    <table id="dynamicTable">
+        <tbody>
+            <!-- rows -->
+        </tbody>
+    </table>
+
+    <div id="overlay" class="overlay" style="display: none;">
+        <div id="studentForm" class="form-container">
+            <h3>Add New Student</h3>
+            
+            <label for="sirName">Sir-Name:</label>
+            <input type="text" id="sirName" required><br>
+    
+            <label for="firstName">First-Name:</label>
+            <input type="text" id="firstName" required><br>
+    
+            <label for="year">Year:</label>
+            <select id="year" required>
+                <option value="">Select Year</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select><br>
+    
+            <label for="form">Form:</label>
+            <select id="form" required>
+                <option value="">Select Form</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select><br>
+    
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" required><br>
+    
+            <button id="saveStudentBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

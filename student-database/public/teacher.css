@@ -1,0 +1,288 @@
+
+* {
+    font-family: Arial, sans-serif;
+    font-size: 10;
+}
+
+/* style for tables*/
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 0px solid white;
+}
+
+td {
+    height: 25px;
+    text-align: left;
+    vertical-align: middle;
+    border-right: 2px solid #707070;
+    border-left: 2px solid #707070;
+    padding: 0;
+    font-size: 15px;
+}
+
+.sub-table-green {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 0;
+}
+
+.sub-table-green td {
+    padding: 0px;
+    border: none;
+}
+
+/* style for the image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 160px;
+    height: 200px;
+}
+
+/* style for permision switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #707070;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #44D1F2;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #44D1F2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* style fro addStudentBtn */
+.circular-button {
+    background-color:grey;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    line-height: 50px;
+}
+
+/* header container for alignemt */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+/* style for the search input */
+#searchInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    width: 200px;
+    font-size: 12px;
+    height: 18px;
+}
+
+/* style for the sort select */
+#sortSelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    width: 110px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 12px;
+    appearance: auto;
+}
+
+/* style for sortBtn */
+#sortBtn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px;
+    font-size: 12px;
+}
+
+/* style for the status indicator */
+#statusIndicator {
+    padding: 10px;
+    background-color: green; /* Initially set to green */
+    color: white;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+}
+
+/* style for overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* On top of other elements */
+}
+
+/* style for from */
+/* Style for the form container */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* heading */
+.form-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* labels for the inputs */
+.form-container label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* input fields */
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* buttons */
+.form-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+/* save button */
+#saveStudentBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* cancel button */
+#cancelBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* style for dropdown menue */
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* stly for deleteBtn */
+.deleteBtn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: large;
+    text-align: center;
+}
+
+.deleteBtn::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 3px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
